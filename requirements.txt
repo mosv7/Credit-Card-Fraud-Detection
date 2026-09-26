@@ -1,0 +1,22 @@
+# Credit Card Fraud Detection — dependencies
+# Verified on Python 3.13 (Windows)
+
+# ── Core scientific stack ──────────────────────────────────────────
+numpy==2.4.2
+pandas==3.0.1
+scikit-learn==1.8.0
+joblib>=1.4.0
+
+# ── Gradient boosting (final model) ─────────────────────────────────
+xgboost==3.4.0
+
+# ── Imbalanced learning ─────────────────────────────────────────────
+# Only required to reproduce the SMOTE experiment in Notebook/EDA.ipynb.
+# SMOTE was evaluated and REJECTED on evidence (it lowered PR-AUC from
+# 0.7740 to 0.7566), so the production training path does not use it.
+imbalanced-learn>=0.12.0
+
+# ── Exploratory analysis (Notebook/EDA.ipynb only) ──────────────────
+matplotlib>=3.9.0
+seaborn>=0.13.0
+jupyterlab>=4.2.0

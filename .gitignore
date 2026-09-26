@@ -1,0 +1,47 @@
+# ─── Large datasets ────────────────────────────────────────────────────────
+# The ULB Credit Card Fraud dataset is ~150 MB, which exceeds GitHub's
+# 100 MB per-file hard limit. It is not version controlled.
+# Download from: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+# and place it at Data/creditcard.csv
+Data/*.csv
+Data/*.zip
+Data/*.gz
+Data/*.parquet
+Data/*.arff
+!Data/.gitkeep
+
+# ─── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ─── Virtual environments ──────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Packaging & tooling ───────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ─── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── Experiment tracking / MLflow ──────────────────────────────────────────
+mlruns/
+mlflow.db
+wandb/
+
+# ─── OS & editor noise ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
