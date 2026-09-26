@@ -508,7 +508,7 @@ asymmetric, the correct objective is neither accuracy nor symmetric F1, but a
 **cost-weighted** score reflecting the relative price of a missed fraud versus a
 declined legitimate transaction.
 
-### 4.3 Resampling is not a substitute for threshold tuning — and often worse
+### 4.3 Resampling is not a substitute for threshold tuning, and is often worse
 
 Two independent resampling strategies were tried: **SMOTE** (synthetic
 oversampling) and **`class_weight`** (cost-sensitive weighting, in the RF grid
@@ -1171,7 +1171,7 @@ Credit-Card-Fraud-Detection/
 
 **Tuning strategy: `scale_pos_weight=1` + low `learning_rate` + high `n_estimators`
 + tuned threshold**, rather than class weighting. This follows the finding in
-[§4.3](#43-resampling-is-not-a-substitute-for-threshold-tuning-and-often-worse)
+[§4.3](#43-resampling-is-not-a-substitute-for-threshold-tuning-and-is-often-worse)
 that all form of resampling failed here, and `eval_metric='aucpr'` puts the
 imbalance-aware objective inside the optimisation loop from the start.
 
